@@ -234,7 +234,8 @@ static NSString *const kVungleTestPlacementID03 = @"PLMT03R77999";
 
 - (IBAction)showAdForPlacement03 {
 	// Play a Vungle ad (with options). Dictionary to set custom ad options.
-	NSDictionary *options = @{VunglePlayAdOptionKeyIncentivizedAlertBodyText : @"If the video isn't completed you won't get your reward! Are you sure you want to close early?",
+    NSDictionary *options = @{VunglePlayAdOptionKeyUser:@"test_user_id",
+                              VunglePlayAdOptionKeyIncentivizedAlertBodyText : @"If the video isn't completed you won't get your reward! Are you sure you want to close early?",
 							  VunglePlayAdOptionKeyIncentivizedAlertCloseButtonText : @"Close",
 							  VunglePlayAdOptionKeyIncentivizedAlertContinueButtonText : @"Keep Watching",
 							  VunglePlayAdOptionKeyIncentivizedAlertTitleText : @"Careful!"};
@@ -264,7 +265,7 @@ static NSString *const kVungleTestPlacementID03 = @"PLMT03R77999";
 
 - (void)updateButtonState:(UIButton *) button enabled:(BOOL)enabled {
     button.enabled = enabled;
-    button.alpha = (enabled? 1.0:0.4);
+    button.alpha = (enabled? 1.0:0.45);
 }
 
 @end
