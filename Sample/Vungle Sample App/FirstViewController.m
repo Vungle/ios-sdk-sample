@@ -249,13 +249,6 @@ static NSString *const kVungleTestPlacementID03 = @"PLMT03R77999";
 }
 
 - (void)updateButtons {
-    NSLog(@"Current Status ------------>> ");
-    NSLog(@"-->> SDK Initialized: %@", (self.sdk.initialized? @"YES":@"NO"));
-    NSLog(@"-->> Placement 01 Loaded: %@", ([self.sdk isAdCachedForPlacementID:kVungleTestPlacementID01]? @"YES":@"NO"));
-    NSLog(@"-->> Placement 02 Loaded: %@", ([self.sdk isAdCachedForPlacementID:kVungleTestPlacementID02]? @"YES":@"NO"));
-    NSLog(@"-->> Placement 03 Loaded: %@", ([self.sdk isAdCachedForPlacementID:kVungleTestPlacementID03]? @"YES":@"NO"));
-    NSLog(@"-->>------------------ ");
-    
     [self updateButtonState:self.playButton1 enabled:[self.sdk isAdCachedForPlacementID:kVungleTestPlacementID01]? YES:NO];
     [self updateButtonState:self.playButton2 enabled:[self.sdk isAdCachedForPlacementID:kVungleTestPlacementID02]? YES:NO];
     [self updateButtonState:self.loadButton2 enabled:[self.sdk isAdCachedForPlacementID:kVungleTestPlacementID02]? NO:YES];

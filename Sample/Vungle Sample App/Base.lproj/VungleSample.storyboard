@@ -124,33 +124,33 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placement 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDU-nQ-UcW">
-                                        <rect key="frame" x="103.5" y="22.5" width="169" height="39"/>
+                                        <rect key="frame" x="103.5" y="23.5" width="169" height="39"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
                                         <color key="textColor" red="0.047042936090000001" green="0.12532427909999999" blue="0.19988590480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5tp-pQ-0mm" userLabel="SpacerView">
-                                        <rect key="frame" x="172.5" y="61.5" width="30" height="7.5"/>
+                                        <rect key="frame" x="172.5" y="62.5" width="30" height="7.5"/>
                                         <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="0.0" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="ist-5y-fo4"/>
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PlacementID: DEFAULT87043" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAe-O0-nNV">
-                                        <rect key="frame" x="97.5" y="69" width="181" height="16"/>
+                                        <rect key="frame" x="97.5" y="70" width="181" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.047042936090000001" green="0.12532427909999999" blue="0.19988590480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bDI-GQ-ZuF" userLabel="SpacerView">
-                                        <rect key="frame" x="172.5" y="85" width="30" height="12"/>
+                                        <rect key="frame" x="172.5" y="86" width="30" height="12"/>
                                         <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="0.0" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="VIb-8C-LWa"/>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJd-FN-G7T">
-                                        <rect key="frame" x="106.5" y="97" width="162" height="32"/>
+                                        <rect key="frame" x="106.5" y="98" width="162" height="32"/>
                                         <color key="backgroundColor" red="0.23862642049789429" green="0.56028372049331665" blue="0.78003120422363281" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="178" id="J9J-a0-sCB"/>
@@ -203,13 +203,13 @@
                                 <rect key="frame" x="0.0" y="294.5" width="375" height="160"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placement 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1PU-3Z-gIB">
-                                        <rect key="frame" x="101.5" y="23.5" width="173" height="39"/>
+                                        <rect key="frame" x="101.5" y="22.5" width="173" height="39"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
                                         <color key="textColor" red="0.047042936090000001" green="0.12532427909999999" blue="0.19988590480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FOx-TD-nao" userLabel="SpacerView">
-                                        <rect key="frame" x="172.5" y="62.5" width="30" height="7"/>
+                                        <rect key="frame" x="172.5" y="61.5" width="30" height="8"/>
                                         <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="0.0" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="MZO-sn-NxB"/>
@@ -402,8 +402,8 @@
                                 <rect key="frame" x="0.0" y="615.5" width="375" height="53.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tei-vI-OP3">
-                                        <rect key="frame" x="46" y="12" width="135" height="30"/>
-                                        <state key="normal" title="LOG Current Status"/>
+                                        <rect key="frame" x="46" y="12" width="130" height="30"/>
+                                        <state key="normal" title="Log Current Status"/>
                                         <connections>
                                             <action selector="onCheckCurrentStatusButtonTapped:" destination="CZ4-MO-1fc" eventType="touchUpInside" id="d2q-74-snL"/>
                                         </connections>

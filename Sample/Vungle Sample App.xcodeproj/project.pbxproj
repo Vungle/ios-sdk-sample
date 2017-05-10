@@ -487,7 +487,7 @@
 				INFOPLIST_FILE = "Vungle Sample App/Vungle Sample App-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.vungle.Vungle-Sample-App-placement";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vungle.Vungle-Sample-App-v5";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -512,7 +512,7 @@
 				INFOPLIST_FILE = "Vungle Sample App/Vungle Sample App-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.vungle.Vungle-Sample-App-placement";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vungle.Vungle-Sample-App-v5";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
