@@ -291,7 +291,6 @@
 				ORGANIZATIONNAME = "Jordyn Chuhaloff";
 				TargetAttributes = {
 					F45D5FC018E0F05300329123 = {
-						DevelopmentTeam = GTA9LK7P23;
 						ProvisioningStyle = Automatic;
 					};
 					F45D5FE718E0F05300329123 = {
@@ -478,7 +477,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = GTA9LK7P23;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/../VungleSDK.embeddedframework",
@@ -503,7 +502,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = GTA9LK7P23;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/../VungleSDK.embeddedframework",
