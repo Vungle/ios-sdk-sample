@@ -8,9 +8,6 @@
 
 #import "FirstViewController.h"
 
-static NSString *const VUNGLE_API_ENDPOINT = @"vungle.api_endpoint";
-static NSString *const kVungleTestEndpoint = @"https://api.vungle.com/api/v5";
-
 static NSString *const kVungleAppIDPrefix = @"AppID: ";
 static NSString *const kVunglePlacementIDPrefix = @"PlacementID: ";
 
@@ -51,13 +48,6 @@ static NSString *const kVungleTestPlacementID03 = @"PLMT03R77999";
     [self setViewDefault];    
 }
 
-- (BOOL)shouldAutorotate {
-    return NO;
-}
-
-- (void)dealloc {
-    [[VungleSDK sharedSDK] setDelegate:nil];
-}
 
 - (IBAction)onInitButtonTapped:(id)sender {
     [self startVungle];
@@ -65,7 +55,7 @@ static NSString *const kVungleTestPlacementID03 = @"PLMT03R77999";
 
 - (IBAction)onLoadButtonTapped:(id)sender {
     if (sender == self.loadButton2) {
-        NSLog(@"-->> load for placement 02");
+        NSLog(@"-->> load an ad for placement 02");
         NSError *error = nil;
         if ([self.sdk loadPlacementWithID:kVungleTestPlacementID02 error:&error]) {
             [self updateButtonState:self.loadButton2 enabled:NO];
@@ -77,7 +67,7 @@ static NSString *const kVungleTestPlacementID03 = @"PLMT03R77999";
         }
     }
     else if(sender == self.loadButton3) {
-        NSLog(@"-->> load for placement 03");
+        NSLog(@"-->> load an ad for placement 03");
         NSError *error = nil;
         if ([self.sdk loadPlacementWithID:kVungleTestPlacementID03 error:&error]) {
             [self updateButtonState:self.loadButton3 enabled:NO];
@@ -91,8 +81,6 @@ static NSString *const kVungleTestPlacementID03 = @"PLMT03R77999";
 }
 
 - (IBAction)onPlayButtonTapped:(id)sender {
-    NSLog(@"-->> onPlayButtonTapped");
-    
     [self updateButtonState:self.playButton1 enabled:NO];
     [self updateButtonState:self.playButton2 enabled:NO];
     [self updateButtonState:self.playButton3 enabled:NO];
@@ -114,9 +102,9 @@ static NSString *const kVungleTestPlacementID03 = @"PLMT03R77999";
 - (IBAction)onCheckCurrentStatusButtonTapped:(id)sender {
     NSLog(@"Current Status ------------>> ");
     NSLog(@"-->> SDK Initialized: %@", (self.sdk.initialized? @"YES":@"NO"));
-    NSLog(@"-->> Placement 01 Loaded: %@", ([self.sdk isAdCachedForPlacementID:kVungleTestPlacementID01]? @"YES":@"NO"));
-    NSLog(@"-->> Placement 02 Loaded: %@", ([self.sdk isAdCachedForPlacementID:kVungleTestPlacementID02]? @"YES":@"NO"));
-    NSLog(@"-->> Placement 03 Loaded: %@", ([self.sdk isAdCachedForPlacementID:kVungleTestPlacementID03]? @"YES":@"NO"));
+    NSLog(@"-->> Placement 01 - an ad Loaded: %@", ([self.sdk isAdCachedForPlacementID:kVungleTestPlacementID01]? @"YES":@"NO"));
+    NSLog(@"-->> Placement 02 - an ad Loaded: %@", ([self.sdk isAdCachedForPlacementID:kVungleTestPlacementID02]? @"YES":@"NO"));
+    NSLog(@"-->> Placement 03 - an ad Loaded: %@", ([self.sdk isAdCachedForPlacementID:kVungleTestPlacementID03]? @"YES":@"NO"));
     NSLog(@"-->>------------------ ");
 }
 
@@ -128,7 +116,7 @@ static NSString *const kVungleTestPlacementID03 = @"PLMT03R77999";
         NSLog(@"-->> Delegate Callback: vungleAdPlayabilityUpdate: Ad is available for Placement ID: %@", placementID);
     }
     else {
-        NSLog(@"-->> Delegate Callback: vungleAdPlayabilityUpdate: Ad is NOT available.");
+        NSLog(@"-->> Delegate Callback: vungleAdPlayabilityUpdate: Ad is NOT availablefor Placement ID: %@", placementID);
     }
     
     if ([placementID isEqualToString:kVungleTestPlacementID01]) {
@@ -182,7 +170,7 @@ static NSString *const kVungleTestPlacementID03 = @"PLMT03R77999";
 }
 
 - (void)vungleSDKDidInitialize {
-    NSLog(@"-->> Delegate Callback: vungleSDKDidInitialize - SDK INITIALIZED SUCCESSFULLY!");
+    NSLog(@"-->> Delegate Callback: vungleSDKDidInitialize - SDK initialized SUCCESSFULLY");
     
     [self updateButtonState:self.loadButton2 enabled:YES];
     [self updateButtonState:self.loadButton3 enabled:YES];
@@ -208,10 +196,6 @@ static NSString *const kVungleTestPlacementID03 = @"PLMT03R77999";
     [self updateButtonState:self.sdkInitButton enabled:NO];
 
     self.placementIDsArray = [NSArray arrayWithObjects:kVungleTestPlacementID01, kVungleTestPlacementID02, kVungleTestPlacementID03, nil];
-
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    // Set endpoint
-    [defaults setObject:kVungleTestEndpoint forKey:VUNGLE_API_ENDPOINT];
     
     self.sdk = [VungleSDK sharedSDK];
     [self.sdk setDelegate:self];
@@ -236,18 +220,12 @@ static NSString *const kVungleTestPlacementID03 = @"PLMT03R77999";
     }
 }
 
-// Play a Vungle ad (with customized options)
 - (IBAction)showAdForPlacement02 {
-    // Dict to set custom ad options
-    NSDictionary *options = @{VunglePlayAdOptionKeyOrientations: @(UIInterfaceOrientationMaskLandscape),
-							  VunglePlayAdOptionKeyUser: @"userPlacementTest",
-                              // Use this to keep track of metrics about your users
-                              VunglePlayAdOptionKeyExtraInfoDictionary: @{VunglePlayAdOptionKeyExtra1: @"21",
-                                                                          VunglePlayAdOptionKeyExtra2: @"Female"}};
+    // Play a Vungle ad (with options). Dictionary to set custom ad options.
+    NSDictionary *options = @{VunglePlayAdOptionKeyOrientations: @(UIInterfaceOrientationMaskLandscape)};
     
-    // Pass in dict of options, play ad
     NSError *error;
-    [self.sdk playAd:self options:options placementID:kVungleTestPlacementID01 error:&error];
+    [self.sdk playAd:self options:options placementID:kVungleTestPlacementID02 error:&error];
     
     if (error) {
         NSLog(@"Error encountered playing ad: %@", error);
@@ -255,15 +233,14 @@ static NSString *const kVungleTestPlacementID03 = @"PLMT03R77999";
 }
 
 - (IBAction)showAdForPlacement03 {
-	// Dict to set custom ad options
+	// Play a Vungle ad (with options). Dictionary to set custom ad options.
 	NSDictionary *options = @{VunglePlayAdOptionKeyIncentivizedAlertBodyText : @"If the video isn't completed you won't get your reward! Are you sure you want to close early?",
 							  VunglePlayAdOptionKeyIncentivizedAlertCloseButtonText : @"Close",
 							  VunglePlayAdOptionKeyIncentivizedAlertContinueButtonText : @"Keep Watching",
 							  VunglePlayAdOptionKeyIncentivizedAlertTitleText : @"Careful!"};
 	
-	// Pass in dict of options, play ad
 	NSError *error;
-	[self.sdk playAd:self options:options placementID:kVungleTestPlacementID01 error:&error];
+	[self.sdk playAd:self options:options placementID:kVungleTestPlacementID03 error:&error];
     
 	if (error) {
 		NSLog(@"Error encountered playing ad: %@", error);

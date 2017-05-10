@@ -27,7 +27,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="59"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VungleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="wD1-tf-251">
-                                        <rect key="frame" x="174" y="20.333333333333329" width="66" height="29.666666666666671"/>
+                                        <rect key="frame" x="173.66666666666666" y="20.666666666666671" width="66.666666666666686" height="29.333333333333329"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="wD1-tf-251" secondAttribute="height" multiplier="9:4" id="DvC-sY-0Ac"/>
                                         </constraints>
@@ -54,13 +54,13 @@
                                 <rect key="frame" x="0.0" y="59" width="414" height="88.333333333333343"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App ID: 58fe200484fbd5b9670000e3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhA-7T-IMS">
-                                        <rect key="frame" x="91" y="17.333333333333329" width="233" height="16"/>
+                                        <rect key="frame" x="91" y="17.666666666666671" width="233" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VNL-Do-aWj" userLabel="SpacerView">
-                                        <rect key="frame" x="202" y="33.333333333333329" width="10" height="5.3333333333333428"/>
+                                        <rect key="frame" x="202" y="33.666666666666671" width="10" height="5"/>
                                         <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="0.0" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="10" id="Mb3-bS-oPU"/>
@@ -140,7 +140,7 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJd-FN-G7T">
-                                        <rect key="frame" x="118.66666666666669" y="106.33333333333331" width="178" height="32.000000000000028"/>
+                                        <rect key="frame" x="118" y="106.33333333333331" width="178" height="32.000000000000028"/>
                                         <color key="backgroundColor" red="0.23862642049789429" green="0.56028372049331665" blue="0.78003120422363281" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="178" id="J9J-a0-sCB"/>
@@ -183,26 +183,26 @@
                                 <rect key="frame" x="0.0" y="325" width="414" height="176.33333333333331"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placement 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1PU-3Z-gIB">
-                                        <rect key="frame" x="121" y="29" width="173" height="39"/>
+                                        <rect key="frame" x="121" y="30" width="173" height="39"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PlacementID: PLMT01R41570" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGw-qN-rS7">
-                                        <rect key="frame" x="118" y="76.333333333333314" width="179" height="16"/>
+                                        <rect key="frame" x="118" y="77" width="179" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FJU-8d-ao1" userLabel="SpacerView">
-                                        <rect key="frame" x="192" y="92.333333333333314" width="30" height="14"/>
+                                        <rect key="frame" x="192" y="93" width="30" height="14"/>
                                         <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="0.0" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="AS5-sH-QHH"/>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vdh-li-fRK">
-                                        <rect key="frame" x="40" y="106.33333333333331" width="158" height="32"/>
+                                        <rect key="frame" x="40.333333333333343" y="107" width="157.33333333333331" height="32"/>
                                         <color key="backgroundColor" red="0.23862642049789429" green="0.56028372049331665" blue="0.78003120422363281" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="32" id="NXv-YU-Niq"/>
@@ -222,7 +222,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKi-xh-5vp">
-                                        <rect key="frame" x="216" y="106.33333333333331" width="158" height="32"/>
+                                        <rect key="frame" x="216.33333333333331" y="107" width="157.33333333333331" height="32"/>
                                         <color key="backgroundColor" red="0.23862642049999999" green="0.56028372049999997" blue="0.78003120420000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="158" id="TqR-9X-voi"/>
@@ -242,7 +242,7 @@
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FOx-TD-nao" userLabel="SpacerView">
-                                        <rect key="frame" x="192" y="68" width="30" height="8.3333333333333144"/>
+                                        <rect key="frame" x="192" y="69" width="30" height="8"/>
                                         <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="0.0" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="MZO-sn-NxB"/>
@@ -273,13 +273,13 @@
                                 <rect key="frame" x="0.0" y="502.33333333333326" width="414" height="176.66666666666674"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placement 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMm-uc-eJC">
-                                        <rect key="frame" x="120" y="29.333333333333314" width="174" height="39"/>
+                                        <rect key="frame" x="120" y="30.333333333333314" width="174" height="39"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tar-j2-PCE">
-                                        <rect key="frame" x="40" y="107.66666666666669" width="158" height="32"/>
+                                        <rect key="frame" x="40.333333333333343" y="108.00000000000006" width="157.33333333333331" height="32"/>
                                         <color key="backgroundColor" red="0.23862642049999999" green="0.56028372049999997" blue="0.78003120420000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="158" id="OEc-MH-EzZ"/>
@@ -299,20 +299,20 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PlacementID: PLMT02I05269" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJA-06-TOa">
-                                        <rect key="frame" x="118" y="77.666666666666686" width="179" height="16"/>
+                                        <rect key="frame" x="118" y="78.000000000000057" width="179" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qkY-pa-1Wa" userLabel="SpacerView">
-                                        <rect key="frame" x="192" y="93.666666666666686" width="30" height="14"/>
+                                        <rect key="frame" x="192" y="94.000000000000057" width="30" height="14"/>
                                         <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="0.0" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="Kd4-V4-XLd"/>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBt-5c-fUg">
-                                        <rect key="frame" x="216" y="107.66666666666669" width="158" height="32"/>
+                                        <rect key="frame" x="216.33333333333331" y="108.00000000000006" width="157.33333333333331" height="32"/>
                                         <color key="backgroundColor" red="0.23862642049999999" green="0.56028372049999997" blue="0.78003120420000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="158" id="hmK-mf-U1m"/>
@@ -331,7 +331,7 @@
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CI7-vV-RrY" userLabel="SpacerView">
-                                        <rect key="frame" x="192" y="68.333333333333314" width="30" height="9.3333333333333712"/>
+                                        <rect key="frame" x="192" y="69.333333333333314" width="30" height="8.6666666666667425"/>
                                         <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="0.0" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="Gko-kY-Lo9"/>
@@ -362,7 +362,7 @@
                                 <rect key="frame" x="0.0" y="679" width="414" height="59"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tei-vI-OP3">
-                                        <rect key="frame" x="46" y="14.333333333333371" width="135" height="30"/>
+                                        <rect key="frame" x="46" y="14.666666666666629" width="135" height="30"/>
                                         <state key="normal" title="LOG Current Status"/>
                                         <connections>
                                             <action selector="onCheckCurrentStatusButtonTapped:" destination="CZ4-MO-1fc" eventType="touchUpInside" id="d2q-74-snL"/>
