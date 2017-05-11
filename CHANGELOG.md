@@ -1,4 +1,7 @@
 ## Changelog
+## VERSION 5.0.0-Beta 1
+* Placements feature implemented.
+
 ## VERSION 4.1.0
 * Fix for occurrence of a black screen at the end of video.
 * Fix to accurately report ad views.
