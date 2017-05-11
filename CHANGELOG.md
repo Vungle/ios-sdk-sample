@@ -1,7 +1,7 @@
 ## Changelog
-### 5.0.0
+## VERSION 5.0.0
 
-### 4.1.0
+## VERSION 4.1.0
 * Fix for occurrence of a black screen at the end of video
 * Cache improvements
 * Migrate to UIWebView for end cards on iOS 9 and 10 to address memory leak in UIWebView
