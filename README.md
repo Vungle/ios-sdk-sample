@@ -3,13 +3,6 @@ To get up and running with Vungle, you'll need to [Create an Account With Vungle
 
 Once you've created an account you can follow our [Getting Started for iOS Guide](https://support.vungle.com/hc/en-us/articles/204430550-Getting-Started-with-Vungle-iOS-SDK) to complete the integration. Remember to get the Vungle App ID from the Vungle dashboard.
 
-The Vungle iOS SDK can also be installed via [CocoaPods](https://cocoapods.org/).  To install the Vungle iOS-SDK via CocoaPods add the following line to your Podfile and re-run the `pod install` command:
-
-```ruby
-pod "VungleSDK-iOS"
-```
-
-The latest information around our CocoaPods support can be found at the [VungleSDK-iOS CocoaPods Page](https://cocoapods.org/pods/VungleSDK-iOS)
 
 ### Version Info
 The Vungle iOS SDK supports iOS 7+, iOS 10 with limited ad tracking, and both 32bit and 64bit apps.  
