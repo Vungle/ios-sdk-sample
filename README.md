@@ -9,7 +9,7 @@ Our newest iOS SDK (5.0.0) was released on May 10th, 2017. Please ensure you are
 
 ## Release Notes
 ### 5.0.0-Beta 1
-＊Placements feature implemented.
+* Placements feature implemented.
 
 ### 4.1.0
 * Fix for occurrence of a black screen at the end of video
