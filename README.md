@@ -1,5 +1,5 @@
 ## Getting Started
-Please refer to the WelcometoVunglePlacements.pdf file in this repository.
+Please refer to https://support.vungle.com/hc/en-us/articles/115000477452
 
 
 ### Version Info
