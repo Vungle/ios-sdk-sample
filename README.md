@@ -1,21 +1,27 @@
-## Getting Started
-Please refer to https://support.vungle.com/hc/en-us/articles/115000477452
+# Vungle's iOS-SDK
+[![Version](https://img.shields.io/cocoapods/v/VungleSDK-iOS.svg?style=flat)](http://cocoapods.org/pods/VungleSDK-iOS)
+[![License](https://img.shields.io/cocoapods/l/VungleSDK-iOS.svg?style=flat)](http://cocoapods.org/pods/VungleSDK-iOS)
+[![Platform](https://img.shields.io/cocoapods/p/VungleSDK-iOS.svg?style=flat)](http://cocoapods.org/pods/VungleSDK-iOS)
 
+## Getting Started
+To get up and running with Vungle, you'll need to [Create an Account With Vungle](https://v.vungle.com/dashboard) and [Add an Application to the Vungle Dashboard](https://support.vungle.com/hc/en-us/articles/210468678)
+
+Once you've created an account you can follow our [Getting Started for iOS Guide](https://support.vungle.com/hc/en-us/articles/204430550-Getting-Started-with-Vungle-iOS-SDK) to complete the integration. Remember to get the Vungle App ID from the Vungle dashboard.
+
+The Vungle iOS SDK can also be installed via [CocoaPods](https://cocoapods.org/).  To install the Vungle iOS-SDK via CocoaPods add the following line to your Podfile and re-run the `pod install` command:
+
+```ruby
+pod "VungleSDK-iOS"
+```
+
+The latest information around our CocoaPods support can be found at the [VungleSDK-iOS CocoaPods Page](https://cocoapods.org/pods/VungleSDK-iOS)
 
 ### Version Info
-The Vungle iOS SDK supports iOS 8+, iOS 10 with limited ad tracking, and both 32bit and 64bit apps.  
+The Vungle iOS SDK supports iOS 7+, iOS 10 with limited ad tracking, and both 32bit and 64bit apps.  
 
-Our newest iOS SDK (5.1.0) was released on July 5th, 2017. Please ensure you are using Xcode 7.0 or higher to ensure smooth integration.
+Our newest iOS SDK (4.1.0) was released on May 10th, 2017. Please ensure you are using Xcode 7.0 or higher to ensure smooth integration.
 
 ## Release Notes
-### 5.1.0
-* Launched new Placements feature.
-* Added Native Flex View ad unit. 
-* Added Moat Viewability technology.
-* Added GZIP for faster network transfers.
-* Migrate MRAID to WKWebView on iOS 9 and 10 to address memory leak in UIWebView.
-* Disabled iOS 7 support.
-
 ### 4.1.0
 * Fix for occurrence of a black screen at the end of video
 * Cache improvements
